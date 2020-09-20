@@ -38,17 +38,16 @@ body {
     border-radius: 10px;
     background-color: #ffffff;
     width: 330px;
-    /* max-height: 514px; */
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 }
 
-.image {
-    height: 200px;
-    overflow: hidden;
-}
-
-.image > img {
-    max-width: 100%;
+.container > img {
+    width: 330px;
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .content {
@@ -102,4 +101,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 800px) {
+    .container {
+        width: 731px;
+        flex-direction: row;
+    }
+
+    .container > img {
+        height: 282px;
+        width: 286px;
+        object-position: left;
+    }
+
+    .content {
+        max-width: 445px;
+    }
 }
