@@ -118,5 +118,16 @@ body {
 
     .content {
         max-width: 445px;
+        padding: 35px 40px 30px;
+    }
+
+    .content > h1 {
+        font-size: 1.6em;
+        line-height: 1.4;
+    }
+
+    .content > p {
+        margin-bottom: 20px;
+        line-height: 1.6;
     }
 }
