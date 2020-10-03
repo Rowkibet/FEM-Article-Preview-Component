@@ -148,11 +148,13 @@ body {
     bottom: -70px;
     left: 0;
     z-index: 5;
+    opacity: 0;
     transition: all 250ms ease-in-out;
 }
 
 .social-links.show {
     bottom: 0;
+    opacity: 1;
 }
 
 .social-links > span {
@@ -262,13 +264,11 @@ body {
         transform: scale(0.9);
         bottom: 80px;
         left: 270px;
-        opacity: 0;
     }
 
     .social-links.show {
         transform: scale(1);
         bottom: 95px;
-        opacity: 1;
     }
 
     .attribution { 
