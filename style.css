@@ -108,7 +108,21 @@ body {
     top: 50%;
     transform: translateY(-50%);
     z-index: 8;
+    transition: all 200ms ease-in-out;
     cursor: pointer;
+}
+
+.share-btn:hover {
+    background-color: var(--grayish-blue);
+}
+
+.share-btn path {
+    fill: #6E8098;
+    transition: fill 200ms ease-in-out;
+}
+
+.share-btn:hover path {
+    fill: #ffffff;
 }
 
 .social-links {
@@ -150,6 +164,35 @@ body {
 .social-links a {
     display: flex;
     align-items: center;
+}
+
+.pinterest {
+    border-radius: 50%;
+}
+
+.social-links path {
+    fill: #fff;
+    transition: fill 200ms ease-in-out;
+}
+
+.facebook:hover {
+    background-color: #ffffff;
+}
+
+.facebook:hover path {
+    fill: #4267B2;
+}
+
+.twitter:hover path {
+    fill: #1DA1F2;
+}
+
+.pinterest:hover {
+    background-image: radial-gradient(circle at center, #ffffff 99%, var(--very-dark-grayish-blue));
+}
+
+.pinterest:hover path {
+    fill: #c8232c;
 }
 
 /* MEDIA QUERIES */
