@@ -112,6 +112,7 @@ body {
     z-index: 8;
     transition: all 200ms ease-in-out;
     cursor: pointer;
+    outline: none;
 }
 
 .share-btn:hover {
