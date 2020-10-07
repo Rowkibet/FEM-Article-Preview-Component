@@ -150,7 +150,7 @@ body {
     left: 0;
     z-index: 5;
     opacity: 0;
-    transition: all 250ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .social-links.show {
@@ -184,6 +184,11 @@ body {
 .social-links a {
     display: flex;
     align-items: center;
+    transform: scale(1);
+}
+
+.social-links a:hover {
+    animation: popup 350ms ease-in-out;
 }
 
 .pinterest {
@@ -192,7 +197,6 @@ body {
 
 .social-links path {
     fill: #fff;
-    transition: fill 200ms ease-in-out;
 }
 
 .facebook:hover {
@@ -224,6 +228,22 @@ body {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* KEYFRAMES */
+
+@keyframes popup {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* MEDIA QUERIES */
